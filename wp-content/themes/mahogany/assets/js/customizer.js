@@ -35,14 +35,14 @@
 		var $doc = $('html, body');
 			$('a').click(function() {
 			    $doc.animate({
-			        scrollTop: $( $.attr(this, 'href') ).offset().top -100
+			        scrollTop: $( $.attr(this, 'href') ).offset().top -120
 			    }, 500);
 			    return false;
 			});
 
 	//videos
 	$('.video_carousel').owlCarousel({
-        items:1,
+        items:3,
         merge:false,
         loop:false,
         margin:10,

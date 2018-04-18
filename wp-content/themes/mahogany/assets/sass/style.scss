@@ -108,11 +108,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 #topfixed{
 	background: #ffff;
-	z-index: 999;
+  z-index: 9999999;
 	width: 100%;
 	top: 0;
 }
 .scrollmenu{
+  position: fixed;
 	-webkit-box-shadow: 0px 3px 17px -5px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 3px 17px -5px rgba(0,0,0,0.75);
 	box-shadow: 0px 3px 17px -5px rgba(0,0,0,0.75);

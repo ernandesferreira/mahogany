@@ -78,7 +78,7 @@
 
 				
 
-		<div class="topo-geral hidden-xs hidden-sm" id="topfixed">
+		<div class="topo-geral hidden-xs hidden-sm affix-top" id="topfixed">
 			<!-- MENU LOGO -->
 			<div class="menu-logo">
 				<div class="container">
