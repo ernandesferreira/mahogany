@@ -1,9 +1,9 @@
 <?php
 function wpc_url_login(){
-    return "http://www.dgrafo.com/"; // your URL here
+    return "http://www.oswoden.com/"; // your URL here
 }
 function wpc_title_login(){
-    return "Dinamo D\'GRAFO"; // your URL here
+    return "Woden"; // your URL here
 }
 add_filter('login_headerurl', 'wpc_url_login');
 add_filter('login_headertitle', 'wpc_title_login');

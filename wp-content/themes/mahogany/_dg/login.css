@@ -1,7 +1,7 @@
 body{ background-color: #383838 !important; }
 #login{ z-index:9999; position:relative; }
 .login form { box-shadow: 0px 0px 0px 0px !important; }
-.login h1 a { background:url("../imagens/logo-rodape.png?as=asas") no-repeat center top !important; height:84px; width:100%;}
+.login h1 a { background:url("http://mahoganywoden.ernandesferreira.com.br/wp-content/uploads/2018/04/logo.png?as=asas") no-repeat center top !important; height:84px; width:100%;}
 
 .login #nav a:hover, .login #backtoblog a:hover{
 	color:#fff !important;
