@@ -1,0 +1,70 @@
+//home
+
+.banner-home{
+
+}
+//titles
+.title-verde{
+	font-family: $font__main;
+	font-size: 21px;
+	color: $color;
+	text-transform: uppercase;
+	text-align: center;
+	h2{
+		font-weight: 300;
+		margin-top: 50px;
+		&:after{
+			position: absolute;
+	    top: 100%;
+	    left: calc(1140px - 50%);
+	    width: 4%;
+	    height: 4px;
+	    background: $red;
+	    content: ''
+		}	
+	}	
+}
+.title-branco{
+	font-family: $font__main;
+	font-size: 21px;
+	color: $branco;
+	text-transform: uppercase;
+	text-align: center;
+	h2{
+		font-weight: 300;
+		margin-top: 50px;
+		&:after{
+			position: absolute;
+	    top: 100%;
+	    left: calc(1140px - 50%);
+	    width: 4%;
+	    height: 4px;
+	    background: $branco;
+	    content: ''
+		}	
+	}	
+}
+//menu_mobile
+.slicknav_menu {
+	display:none;
+}
+
+@media screen and (max-width: 40em) {
+	/* #menu is the original menu */
+	.js #menu {
+		display:none;
+	}
+	
+	.js .slicknav_menu {
+		display:block;
+	}
+}
+
+.topo_menu_mobile{
+	#menu{
+		display: none;
+	}
+}
+.logo_mobile{
+	padding: 30px;
+}

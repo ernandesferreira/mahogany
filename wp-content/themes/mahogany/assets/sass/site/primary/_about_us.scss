@@ -1,0 +1,98 @@
+//about us
+.text-content_about{
+	padding: 0 100px 0 20px;
+	line-height: 21px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.text-content_branco{
+	padding: 0 100px 0 20px;
+	line-height: 21px;
+  font-size: 15px;
+  font-weight: 300;
+  color: $branco;
+}
+
+//videos
+
+.description_video{
+	font-size: 16.78px;
+	color: #989da8;
+	background-color: $branco;
+	padding: 10px;
+	min-height: 70px;
+	max-width: 350px;
+	p{
+		margin: 0;
+	}
+}
+
+//sustentabilidade_slider
+.sustentabilidade_slider{
+  padding-bottom: 50px;
+}
+
+//content_investor]
+.content_investor{
+	padding: 0 60px;
+	line-height: 21px;
+  font-size: 15px;
+  font-weight: 300;
+}
+.text-content_investor{
+  .carrousel_investor{
+  	button.slick-prev{
+  		position: absolute!important;
+	    left: -75px!important;
+	    top: calc(430px - 50%)!important;
+	    background: transparent;
+	    border: 0;
+	    background: url('../images/previus.png') no-repeat 0 0;
+	    width: 51px;
+	    height: 182px;
+	    
+  	}
+  	button.slick-next{
+  		position: absolute!important;
+	    right: -75px!important;
+	    top: calc(430px - 50%)!important;
+	    background: transparent;
+	    border: 0;
+	    background: url('../images/next.png') no-repeat 0 0;
+	    width: 51px;
+	    height: 182px;
+  	}
+  }
+}
+//contact
+.text-content_form{
+	padding-left: 30px;
+	textarea{
+		height: 151px;
+	}
+	input[type="submit"]{
+		font-size: 15px;
+		float: right;
+    background: transparent;
+    text-transform: uppercase;
+    border-color: $verde_escuro;
+    @extend .transition1;
+    &:hover{
+    	background: $verde_escuro;
+    	color: $branco;
+    }
+	}
+}
+.text-content_contato{
+	height: 151px;
+	p{
+		bottom: 0;
+    position: absolute;
+    font-size: 15px;
+    margin: 0;
+    b{
+    	color: $verde_escuro; 
+    }	
+	}
+}

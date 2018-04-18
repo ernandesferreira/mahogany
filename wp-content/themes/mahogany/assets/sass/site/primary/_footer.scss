@@ -1,0 +1,38 @@
+//home
+
+.site-footer{
+	background-color: $red;
+	color: $branco;	
+}
+.footer-meio{
+	padding: 30px 0;
+}
+.creditos{
+	background-color: #7b3827;
+	color: $branco;
+	padding: 30px 0;
+}
+.nav-default{
+	h3{
+		font-size: 16.83px;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+	}
+	nav{
+		ul{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			li{
+				font-size: 8px;
+				a{
+					margin: 0;
+					&:hover{
+						text-decoration: none;
+						color: $branco;
+					}
+				}
+			}
+		}
+	}
+}

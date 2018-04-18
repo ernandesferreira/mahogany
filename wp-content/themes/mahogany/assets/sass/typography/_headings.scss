@@ -1,0 +1,131 @@
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+
+h1.site-title{
+	margin: 0;
+}
+.top-header{
+	background-color: $color;
+	color: $color__background-body;
+	padding: 15px 0;
+}
+.logo-header{
+	height: 75px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+	.site-title{
+		position: absolute;
+    top: 26px;
+	}
+}
+.social-icon{
+	ul{
+		margin: 0;
+		display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+		a{
+			color: $color__background-body;
+			margin-right: 7px;
+			&:last-child{
+      	margin-right: 0;
+      }
+			li{
+				border: 1px solid #fff;
+		    border-radius: 50%;
+        display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    width: 22px;
+		    height: 21px;
+		    text-align: center;
+		    font-size: 12px;
+		  }  
+	    &:hover{
+	    	color: $cor_text;
+	    	text-decoration: none;
+	    	li{
+	    		border-color: $cor_text;
+	    	}	    	
+	    }
+		}
+	}
+}
+//MENU
+.menu-itens{
+	background-color: $cinza;
+}
+.cl-effect-3{
+	.menu-menu-1-container{
+		ul{
+			display: flex;
+			flex-direction: row;
+    	align-items: center;
+    	height: 75px;
+    	text-align: center;
+    	li{
+		    padding: 25px 12px;
+		    font-size: 12px;
+        font-weight: 400;
+		    text-transform: uppercase;
+        //margin-right: 21px;
+        font-family: $font__main;
+        &:last-child{
+        	margin-right: 0;
+        	padding-right: 0;
+        	a{
+        		margin-right: 0;
+        	}
+        }
+    		a{
+					color: $color;
+			    margin: 4px -14px;
+	        letter-spacing: -1px;
+    			font-size: inherit;
+    			padding: 0px 10px!important;
+    			border-right: 1px solid $color;
+					@extend .transition1;
+					&:after{
+				    background: $color!important;
+				    top: 41px;
+				    
+	    		}
+    		}    		
+    		&:hover{
+    			a{
+    				color: $color;    				
+    			}
+    		}
+    		&:last-child{
+    			a{
+    				border-right: 0;
+    			}
+    		}
+    	}
+		}
+	}
+}
+
+.btn-sistema{
+  padding: 27px 0;
+  text-align: center;
+	a{
+    border: 1.5px solid $color;
+    padding: 10px;
+    border-radius: 50px;
+    color: $color; 
+    text-transform: uppercase;
+    @extend .transition;
+	}
+	&:hover{
+		a{
+			background-color: $color;
+			color: $branco;
+			text-decoration: none;
+			border-color: transparent;
+		}
+	}
+}
