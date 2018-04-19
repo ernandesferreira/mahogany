@@ -43,7 +43,7 @@
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
 
-			<div class="topo_menu_mobile hidden-lg hidden-md">
+			<div class="topo_menu_mobile hidden-lg hidden-md visible-sm">
 				<div class="logo_mobile">
 					<div class="container">
 						<div class="row">

@@ -104,7 +104,40 @@
 	
 }
 @media only screen and (max-width: 800px) {
-
+	.title-verde, .title-branco{
+		h2{
+			&:after{
+				left: calc(735px - 50%);
+				width: 4%;
+			}
+		}
+	}
+	.row-contentAbout{
+		text-align: center;
+	}
+	.text-content_about, .text-content_branco{
+		padding: 0;
+		padding-top: 20px;
+		text-align: center;
+	}
+	.text-content_contato{
+		height: 65px;
+		p{
+			position: relative;
+			text-align: center;
+			margin-top: 20px;
+		}
+	}
+	.text-content_form{
+		padding-left: 0;
+	}
+	.logo_footer{
+		text-align: center;
+	}
+	.nav-default{
+		text-align: center;
+		margin-top: 45px;
+	}
 }
 
 @media only screen and (max-width: 680px) {
@@ -156,6 +189,16 @@
 		text-align: center;
 	}
 
+}
+@media only screen and (max-width: 375px) {
+	.title-verde, .title-branco{
+		h2{
+			&:after{
+		    left: calc(333px - 50%);
+				width: 25%;
+			}
+		}
+	}
 }
 @media only screen and (max-width: 320px) {
 	.title-verde, .title-branco{

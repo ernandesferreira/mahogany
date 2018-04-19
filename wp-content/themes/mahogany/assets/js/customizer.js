@@ -61,6 +61,11 @@
             },
             600:{
                 items:2
+            },
+            768:{
+                items:2,
+                margin:10,
+                videoWidth: 340,
             }
         }
     });
