@@ -14,8 +14,9 @@
 
 get_header(); ?>
 
+<div class="container">
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+		<main id="main" class="site-main text-content_about">
 
 			<?php
 			while ( have_posts() ) : the_post();
@@ -30,9 +31,29 @@ get_header(); ?>
 			endwhile; // End of the loop.
 			?>
 
+			<?php 
+				$images = get_field('galeria');
+				if( $images ):
+			?>
+				<div class="galeria-page">
+					<div class="bxslider">
+					 <?php 
+					 	foreach( $images as $image ):
+					 		$imagem = $image;
+
+					 		//var_dump($imagem);
+					 ?>
+						  <div><img src="<?php echo $image['sizes']['medium_large']; ?>" title="<?php echo $image['caption']; ?>"></div>
+					 <?php endforeach; ?>
+					</div>
+				</div>
+			<?php endif; ?>
+
 		</main><!-- #main -->
+
+		
 	</div><!-- #primary -->
+</div>	
 
 <?php
-get_sidebar();
 get_footer();

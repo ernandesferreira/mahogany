@@ -69,6 +69,11 @@ function login_enqueue_scripts(){
 	}
 add_action( 'login_enqueue_scripts', 'login_enqueue_scripts' );
 
+add_action( 'after_setup_theme', 'register_menuInternas' );
+function register_menuInternas() {
+  register_nav_menu( 'internas', __( 'Menu Internas', 'interna' ) );
+}
+
 
 include 'dg_menus.php';
 include 'dg_widgets.php';

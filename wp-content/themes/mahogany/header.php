@@ -30,6 +30,8 @@
 	<!-- CSS FANCYBOX -->
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" />
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  
   <!-- Popper.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
@@ -74,10 +76,17 @@
 					</div>
 				</div>
 				<?php
-				wp_nav_menu( array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'menu',
-				) );
+					if ( is_front_page() || is_home() ){
+						wp_nav_menu( array(
+							'theme_location' => 'menu-1',
+							'menu_id'        => 'menu',
+						) );
+					}else{
+						wp_nav_menu( array(
+							'theme_location' => 'interna',
+							'menu_id'        => 'internas',
+						) );
+					}				
 			?>
 		</div>	
 
@@ -126,10 +135,19 @@
 							<nav id="cl-effect-3" class="main-navigation cl-effect-3">
 								<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'dgrafo' ); ?></button>
 								<?php
+								if ( is_front_page() || is_home() ){
 									wp_nav_menu( array(
 										'theme_location' => 'menu-1',
 										'menu_id'        => 'primary-menu',
 									) );
+								}else{
+									wp_nav_menu( array(
+										'theme_location' => 'internas',
+										'container' => 'div',
+										'menu_class' => 'menu-menu-1-container',
+										'menu_id'        => 'primary-menu',
+									) );
+								}	
 								?>
 							</nav><!-- #site-navigation -->
 						</div>

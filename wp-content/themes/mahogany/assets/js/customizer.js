@@ -102,4 +102,12 @@
 		duration: 200
 	});
 
+    $('.bxslider').bxSlider({
+        mode: 'fade',
+        captions: true,
+        adaptiveHeight: true,
+        wrapperClass: "bx-wrapper container-imagens",
+        slideWidth: 700
+      });
+
 } )( jQuery );
