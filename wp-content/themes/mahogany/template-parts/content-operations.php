@@ -34,7 +34,7 @@
 						}
 					?>
 					<di class="btn-center">
-						<a href="/operacoes"><button class="btn btn-primary default"> veja + </button></a>
+						<a href="/operacao"><button class="btn btn-primary default"> veja + </button></a>
 					</di>	
 				</div>
 				
