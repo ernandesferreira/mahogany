@@ -18,15 +18,17 @@
 					<div class="carrousel_investor">
 					  <?php 
 							foreach($itens_investor as $investor){
-
-								$imagem = $investor['imagem'];
-
-								echo '<div class="col-xs-12 col-md-4"><img src="'.$imagem.'" alt="placeholder+image"></div>';
+								$imagem = $investor['imagem']['sizes']['large'];
+								$caption = $investor['imagem']['alt'];
+								echo '<div class="col-xs-12 col-md-4"><img src="'.$imagem.'" alt="'.$caption.'"></div>';
 							}
 						?>			    
 					</div>
 				</div>
-
+				
+				<di class="btn-center text-center">
+						<a href="/area-investidor"><button class="btn btn-primary default"> saiba mais </button></a>
+					</di>	
 		</div>
 	</div>
 </div>

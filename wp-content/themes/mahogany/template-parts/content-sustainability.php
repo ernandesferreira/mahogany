@@ -28,7 +28,7 @@
 				<div class="col-xs-12 col-md-6">
 					<div class="text-content_branco">
 						<?php echo $conteudo; ?>
-						<button class="btn btn-primary default btn-transparent"><a href="#"> Leia mais </a></button>
+						<a href="/sustentabilidade"><button class="btn btn-primary default btn-transparent"> saiba mais </button></a>
 					</div>
 				</div>
 			</div>	

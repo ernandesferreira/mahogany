@@ -1,6 +1,6 @@
 {
     "key": "group_5ad6c16ea94e2",
-    "title": "Sustentabilidade",
+    "title": "BLOCO SUSTENTABILIDADE",
     "fields": [
         {
             "key": "field_5ad6c18b4624e",
@@ -76,13 +76,29 @@
             }
         ]
     ],
-    "menu_order": 2,
+    "menu_order": 4,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
     "active": 1,
-    "description": "",
-    "modified": 1524023800
+    "description": "EDIÇÃO DE CONTEÚDO DO BLOCO DA HOME",
+    "modified": 1528417086
 }

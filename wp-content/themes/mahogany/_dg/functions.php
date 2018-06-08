@@ -74,6 +74,94 @@ function register_menuInternas() {
   register_nav_menu( 'internas', __( 'Menu Internas', 'interna' ) );
 }
 
+function youtubeID($url){
+    $pos=strpos($url,"v=");
+    if($pos==true)
+    {
+        $res = explode("v=", $url);
+    }
+    else
+    {
+        $pos=strpos($url,"v/");
+
+        if($pos==true)
+        {
+        $res = explode("v/", $url);
+        }
+        else
+        {
+            $pos=strpos($url,"video/");
+
+            if($pos==true)
+            {
+                $res=explode("video/", $url);
+            }
+            else
+            {
+                $pos=strpos($url,"embed/");
+
+                if($pos==true)
+                {
+                    $res=explode("embed/", $url);
+                }
+                else
+                {
+                    $pos=strpos($url, "youtu.be/");
+
+                    if($pos==true)
+                    {
+                        $res=explode("youtu.be/", $url);
+                    }
+                    else
+                    {
+                        $pos=strpos($url, "id=/");
+
+                        if($pos==true)
+                        {
+                            $res=explode("id=", $url);
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    // Ex:
+    //http://www.youtube.com/watch?v=mzMVkZaufZU
+    // res[0]=  http://www.youtube.com/watch?
+    // res[1]=  =mzMVkZaufZU
+
+    if(isset($res[1])) {  
+
+        $res1 = explode('&',$res[1]);
+        if(isset($res1[1])){
+            $res[1] = $res1[0];
+        }
+        $res1 = explode('?',$res[1]);
+        if(isset($res1[1])){
+            $res[1] = $res1[0];
+        }
+        $res1 = explode('#',$res[1]);
+        if(isset($res1[1])){
+           $res[1] = $res1[0];
+       }    
+
+     return substr($res[1],0,11);
+     return false;
+    }
+ }
+
+ //pegar a imagem do video do youtube
+ function youtubeImage($url, $size = 'mqdefault'){
+    //todo o código irá ficar aqui
+    $link = parse_url( $url );
+    parse_str($link['query'], $query_link);
+    if($query_link) {
+        $url = $size == 'small' ? ('http://i1.ytimg.com/vi/' . $query_link['v'] . '/mqdefault.jpg') : ('http://img.youtube.com/vi/' . $query_link['v'] . '/mqdefault.jpg');
+    }
+    return $url;
+}
+
 
 include 'dg_menus.php';
 include 'dg_widgets.php';

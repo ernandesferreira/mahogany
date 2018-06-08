@@ -49,6 +49,36 @@
 	display:none;
 }
 
+.video_carousel{
+	.slick-prev{
+    position: absolute;
+    bottom: -3.9rem;
+    left: 0.666667rem;
+		background: url('../images/video_prev.png') no-repeat;
+		background-color: transparent;
+    background-size: contain;
+    width: 4.166666666666667rem;
+    height: 4.166666666666667rem;
+    border: none;
+	}
+	.slick-next{
+		position: absolute;
+		bottom: -3.9rem;
+		right: 1.6666666666666667rem;
+   	background: url('../images/video_next.png') no-repeat;
+		background-color: transparent;
+    background-size: contain;
+    width: 4.166666666666667rem;
+    height: 4.166666666666667rem;
+    border: none;
+    
+	}
+	.item-video{
+    width: 29.166666666666668rem;
+    margin-right: 1.6666666666666667rem;
+	}
+}
+
 @media screen and (max-width: 50em) {
 	/* #menu is the original menu */
 	.js #menu {

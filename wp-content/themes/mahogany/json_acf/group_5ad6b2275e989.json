@@ -1,6 +1,6 @@
 {
     "key": "group_5ad6b2275e989",
-    "title": "Videos",
+    "title": "BLOCO DE VÍDEOS",
     "fields": [
         {
             "key": "field_5ad6b24131dd1",
@@ -71,13 +71,29 @@
             }
         ]
     ],
-    "menu_order": 0,
+    "menu_order": 3,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
     "active": 1,
-    "description": "",
-    "modified": 1524019854
+    "description": "EDIÇÃO DE CONTEÚDO DO BLOCO DA HOME",
+    "modified": 1528416821
 }

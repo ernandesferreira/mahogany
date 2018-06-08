@@ -11,7 +11,16 @@
 		<div class="row row-contentAbout row-50">
 			<div class="col-xs-12 col-md-4">
 				<div class="img-content_about">
-					<img src="<?php echo get_template_directory_uri().'/assets/images/about_us.png'; ?>" alt="About-us">
+					<?php
+						$imagem = get_field('imagem_sobreNos', 'options');
+
+						if( $imagem ){
+							echo '<img src="'.$imagem['sizes']['large'].'" alt="'.$imagem['alt'].'">';
+						}else{
+							echo '<img src="'.get_template_directory_uri().'/assets/images/about_us.png" alt="About-us">';
+						}
+					?>
+					
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-8">
@@ -21,8 +30,10 @@
 					echo get_field("conteudo_quemSomos", "options");
 				?>
 
-					
-					<button class="btn btn-primary default"><a href="/quem-somos"> veja + </a></button>
+				<?php
+					$link = get_field("link_pagina_sobrenos", "options");
+				?>					
+					<a href="<?php echo $link; ?>"><button class="btn btn-primary default"> veja + </button></a>
 				</div>
 			</div>
 		</div>	

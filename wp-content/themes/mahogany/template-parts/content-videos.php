@@ -13,23 +13,29 @@
 				</div>
 			</div>
 		</div>
-		<div class="row row-50">
+		<div class="row row-100">
 			<div class="col-xs-12">
 				<div class="video-content">
-					<div class="owl-carousel owl-theme video_carousel">
-						<?php 
-							foreach($videos as $key => $video){
+					<div class="video_carousel">
+						<?php
+							$count = 0; 
+							foreach($videos as $video){							
 
 								$video_id = $key;
 								$link_video = $video['link_video'];
+								$idVideo = youtubeID($link_video);
+								$imageVideo = youtubeImage($link_video);
+								$descricao = $video['descricao'];
 
-								echo '<div class="item-video" data-merge="'.$key.'">
+								//echo '<pre>' . print_r($imageVideo, true) . '</pre>';
+
+								echo '<div class="item-video" data-merge="'.$count.'">
 												<div class="description_video"> 
-													<p><i class="far fa-arrow-alt-circle-left"></i> Estudante Amapaense participa do Jovem Senador em Brasilia</p> 
+													<p><i class="far fa-arrow-alt-circle-left"></i> '.$descricao.' </p> 
 												</div>
-												<a class="owl-video" href="'.$link_video.'"></a>
+												<iframe width="560" height="315" src="https://www.youtube.com/embed/'.$idVideo.'?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 											</div>';
-							}
+							$count++; }
 						?>			    
 				</div>
 				</div>

@@ -1,35 +1,11 @@
 {
-    "key": "group_5b18944c5302e",
-    "title": "BLOCO SOBRE NÓS",
+    "key": "group_5b18944c5302e-copy",
+    "title": "BLOCO OPERAÇÕES",
     "fields": [
         {
-            "key": "field_5b19cf85326e7",
-            "label": "Imagem do bloco",
-            "name": "imagem_sobreNos",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "preview_size": "thumbnail",
-            "library": "all",
-            "min_width": 568,
-            "min_height": 320,
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_5b18947561862",
-            "label": "Conteúdo",
-            "name": "conteudo_quemSomos",
+            "key": "field_5b19c98f42be5",
+            "label": "Conteúdo do bloco",
+            "name": "conteudo_operacao",
             "type": "wysiwyg",
             "instructions": "",
             "required": 0,
@@ -46,10 +22,10 @@
             "delay": 0
         },
         {
-            "key": "field_5b19d1379f807",
-            "label": "Link da Página",
-            "name": "link_pagina_sobrenos",
-            "type": "page_link",
+            "key": "field_5b19c9b242be6",
+            "label": "Imagem do bloco",
+            "name": "imagem_operacoes",
+            "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -58,13 +34,16 @@
                 "class": "",
                 "id": ""
             },
-            "post_type": [
-                "page"
-            ],
-            "taxonomy": [],
-            "allow_null": 0,
-            "allow_archives": 1,
-            "multiple": 0
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": 1280,
+            "min_height": 408,
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
@@ -76,7 +55,7 @@
             }
         ]
     ],
-    "menu_order": 1,
+    "menu_order": 2,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -99,6 +78,6 @@
         "send-trackbacks"
     ],
     "active": 1,
-    "description": "EDIÇÃO DE CONTEÚDO DO BLOCO",
-    "modified": 1528418659
+    "description": "EDIÇÃO DE CONTEÚDO DO BLOCO DA HOME",
+    "modified": 1528416766
 }

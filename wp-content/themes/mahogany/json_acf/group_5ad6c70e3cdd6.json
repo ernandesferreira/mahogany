@@ -34,8 +34,8 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "url",
-                    "preview_size": "thumbnail",
+                    "return_format": "array",
+                    "preview_size": "medium",
                     "library": "all",
                     "min_width": "",
                     "min_height": "",
@@ -57,13 +57,29 @@
             }
         ]
     ],
-    "menu_order": 3,
+    "menu_order": 5,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "permalink",
+        "the_content",
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "slug",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
     "active": 1,
-    "description": "",
-    "modified": 1528337682
+    "description": "EDIÇÃO DE CONTEÚDO DO BLOCO DA HOME",
+    "modified": 1528417631
 }
