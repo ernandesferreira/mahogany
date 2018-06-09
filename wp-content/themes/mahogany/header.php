@@ -78,18 +78,20 @@
 					</div>
 				</div>
 				<?php
-					if ( is_front_page() || is_home() ){
+					if ( is_front_page() ){
 						wp_nav_menu( array(
 							'theme_location' => 'menu-1',
-							'menu_id'        => 'menu',
+							'menu_id'        => 'primary-menu',
 						) );
 					}else{
 						wp_nav_menu( array(
-							'theme_location' => 'interna',
-							'menu_id'        => 'internas',
+							'theme_location' => 'internas',
+							'container' => 'div',
+							'menu_class' => 'menu-menu-1-container',
+							'menu_id'        => 'primary-menu',
 						) );
-					}				
-			?>
+					}	
+				?>
 		</div>	
 
 				
@@ -137,19 +139,19 @@
 							<nav id="cl-effect-3" class="main-navigation cl-effect-3">
 								<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'dgrafo' ); ?></button>
 								<?php
-								if ( is_front_page() || is_home() ){
-									wp_nav_menu( array(
-										'theme_location' => 'menu-1',
-										'menu_id'        => 'primary-menu',
-									) );
-								}else{
-									wp_nav_menu( array(
-										'theme_location' => 'internas',
-										'container' => 'div',
-										'menu_class' => 'menu-menu-1-container',
-										'menu_id'        => 'primary-menu',
-									) );
-								}	
+									if ( is_front_page() ){
+										wp_nav_menu( array(
+											'theme_location' => 'menu-1',
+											'menu_id'        => 'primary-menu',
+										) );
+									}else{
+										wp_nav_menu( array(
+											'theme_location' => 'internas',
+											'container' => 'div',
+											'menu_class' => 'menu-menu-1-container',
+											'menu_id'        => 'primary-menu',
+										) );
+									}	
 								?>
 							</nav><!-- #site-navigation -->
 						</div>

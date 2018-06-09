@@ -1,0 +1,47 @@
+[class^='imghvr-'],
+[class*=' imghvr-'] {
+  background-color: #D14233;
+}
+
+[class*=" imghvr-"] figcaption, [class^=imghvr-] figcaption{
+	background-color: #AF3F26;
+}
+
+.posts_grid{
+	margin-top: 5rem;
+	li.item-post{
+		width: 30%;
+		figure{
+			img{
+				width: 100%;
+			}
+			figcaption{
+		    padding: 17px;
+			}
+		}
+	}
+}
+
+
+@media only screen and (max-width: 12000px) {
+
+}
+@media only screen and (max-width: 1024px) {
+	
+}
+@media only screen and (max-width: 800px) {
+	
+}
+
+@media only screen and (max-width: 680px) {
+
+}
+@media only screen and (max-width: 480px) {
+
+}
+@media only screen and (max-width: 375px) {
+	
+}
+@media only screen and (max-width: 320px) {
+
+}

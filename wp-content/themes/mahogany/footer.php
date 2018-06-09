@@ -12,7 +12,8 @@
 ?>
 
 	</div><!-- #content -->
-
+	<?php //BLOCO O contact_us 
+	echo get_template_part( 'template-parts/content-contact_us', get_post_format() ); ?>
 	<footer id="colophon" class="site-footer">
 		<div class="container">
 			<div class="row footer-meio">
@@ -21,60 +22,31 @@
 						<img src="<?php echo get_template_directory_uri().'/assets/images/logo_footer.png' ?>" alt="placeholder+image">
 					</div>
 				</div>
-				<div class="col-xs-12 col-md-2">
+				<div class="col-xs-12 col-md-7">
 					<div class="nav-default nav-cidadao">
-						<h3>Cidadão</h3>
-						<nav>
-							<ul>
-								<li><a href="#nowhere" title="Lorum ipsum dolor sit amet">Lorem</a></li>
-								<li><a href="#nowhere" title="Aliquam tincidunt mauris eu risus">Aliquam</a></li>
-								<li><a href="#nowhere" title="Morbi in sem quis dui placerat ornare">Morbi</a></li>
-								<li><a href="#nowhere" title="Praesent dapibus, neque id cursus faucibus">Praesent</a></li>
-								<li><a href="#nowhere" title="Pellentesque fermentum dolor">Pellentesque</a></li>
-							</ul>
+						<h3>Menu</h3>
+						<nav class="footerMenu">
+							<?php
+								wp_nav_menu( array(
+									'theme_location' => 'internas',
+									'container' => 'div',
+									'menu_class' => 'menu-footer',
+									'menu_id'        => 'primary-menu',
+								) );
+							?>
 						</nav>
 					</div>
 				</div>
-				<div class="col-xs-12 col-md-2">
-					<div class="nav-default nav-cidadao">
-						<h3>Empresas</h3>
-						<nav>
-							<ul>
-								<li><a href="#nowhere" title="Lorum ipsum dolor sit amet">Lorem</a></li>
-								<li><a href="#nowhere" title="Aliquam tincidunt mauris eu risus">Aliquam</a></li>
-								<li><a href="#nowhere" title="Morbi in sem quis dui placerat ornare">Morbi</a></li>
-								<li><a href="#nowhere" title="Praesent dapibus, neque id cursus faucibus">Praesent</a></li>
-								<li><a href="#nowhere" title="Pellentesque fermentum dolor">Pellentesque</a></li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-				<div class="col-xs-12 col-md-2">
-					<div class="nav-default nav-cidadao">
-						<h3>Servidores</h3>
-						<nav>
-							<ul>
-								<li><a href="#nowhere" title="Lorum ipsum dolor sit amet">Lorem</a></li>
-								<li><a href="#nowhere" title="Aliquam tincidunt mauris eu risus">Aliquam</a></li>
-								<li><a href="#nowhere" title="Morbi in sem quis dui placerat ornare">Morbi</a></li>
-								<li><a href="#nowhere" title="Praesent dapibus, neque id cursus faucibus">Praesent</a></li>
-								<li><a href="#nowhere" title="Pellentesque fermentum dolor">Pellentesque</a></li>
-							</ul>
-						</nav>
-					</div>
-				</div>
+				
 				<div class="col-xs-12 col-md-2">
 					<div class="nav-default nav-cidadao">
 						<h3>Redes Sociais</h3>
 						<nav>
 							<ul>
-								<li><a href="#nowhere" title="Lorum ipsum dolor sit amet">Lorem</a></li>
-								<li><a href="#nowhere" title="Aliquam tincidunt mauris eu risus">Aliquam</a></li>
-								<li><a href="#nowhere" title="Morbi in sem quis dui placerat ornare">Morbi</a></li>
+								<li><a href="http://facebook.com.br" title="Lorum ipsum dolor sit amet">Facebook</a></li>
+								<li><a href="http://facebook.com.br" title="Aliquam tincidunt mauris eu risus">Instagram</a></li>
 							</ul>
 						</nav>
-						<br/>
-						<p>  Webmail GOV </p>
 					</div>
 				</div>
 				<hr/>

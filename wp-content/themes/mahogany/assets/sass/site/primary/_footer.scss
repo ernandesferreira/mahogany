@@ -18,20 +18,55 @@
 		text-transform: uppercase;
 		margin-bottom: 30px;
 	}
+	nav.footerMenu{
+		.menu-menu-internas-container{
+			ul{
+				padding: 0;
+				margin: 0;
+				list-style: none;
+				display: flex;
+		    flex-direction: row;
+		    justify-content: space-around;
+		    align-items: center;
+				li{
+					font-size: 8px;
+					a{
+						color: $branco;
+						margin: 0;
+						padding: 20px 4px;
+						&:hover{
+							text-decoration: none;
+							background: $branco;
+							color: $red;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.nav-cidadao{
 	nav{
 		ul{
-			padding: 0;
-			margin: 0;
 			list-style: none;
+			margin: 0;
+			padding: 0;
 			li{
-				font-size: 8px;
 				a{
-					margin: 0;
+					margin: inherit;
 					&:hover{
-						text-decoration: none;
 						color: $branco;
 					}
 				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 680px) {
+	nav.footerMenu{
+		.menu-menu-internas-container{
+			ul{
+		    flex-direction: column;
 			}
 		}
 	}

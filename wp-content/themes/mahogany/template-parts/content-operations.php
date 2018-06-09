@@ -4,7 +4,7 @@
 		<div class="row" id="operations">
 			<div class="col-xs-12">
 				<div class="title-verde">
-					<h2> Our Operations </h2>
+					<h2> Operação </h2>
 				</div>
 			</div>
 		</div>

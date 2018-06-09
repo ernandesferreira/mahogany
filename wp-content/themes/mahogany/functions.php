@@ -133,8 +133,8 @@ function dgrafo_scripts() {
 
 	wp_enqueue_style( 'dgrafo-slicknav', get_template_directory_uri() . '/assets/css/slicknav.min.css', array(), '1.0.0' );
 
-
 	wp_enqueue_style( 'dgrafo-menuHover', get_template_directory_uri() . '/assets/css/menu_hover/component.css', array(), '1.0.0' );
+
 
 	
 

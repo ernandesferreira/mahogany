@@ -8,7 +8,7 @@
 		<div class="row" id="investor">
 			<div class="col-xs-12">
 				<div class="title-verde">
-					<h2> investor relations </h2>
+					<h2> Relação com Investidores </h2>
 				</div>
 			</div>
 		</div>
@@ -27,7 +27,7 @@
 				</div>
 				
 				<di class="btn-center text-center">
-						<a href="/area-investidor"><button class="btn btn-primary default"> saiba mais </button></a>
+						<a href="/relacao-com-investidor"><button class="btn btn-primary default"> saiba mais </button></a>
 					</di>	
 		</div>
 	</div>

@@ -4,7 +4,7 @@
 		<div class="row" id="contact_us">
 			<div class="col-xs-12">
 				<div class="title-verde">
-					<h2> Contact us </h2>
+					<h2> Contato </h2>
 				</div>
 			</div>
 		</div>
@@ -18,7 +18,7 @@
 				<div class="text-content_contato">
 					<p>
 						<b>ir@mahogany.com</b> <br/>
-						+55 441 295 4736
+						<!-- +55 441 295 4736 -->
 					</p>
 				</div>
 			</div>

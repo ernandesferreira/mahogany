@@ -17,7 +17,7 @@ get_header();
 	echo get_template_part( 'template-parts/content-operations', get_post_format() );
 
 	//BLOCO VIDEOS
-	echo get_template_part( 'template-parts/content-videos', get_post_format() );
+	//echo get_template_part( 'template-parts/content-videos', get_post_format() );
 
 	//BLOCO O sustainability 
 	echo get_template_part( 'template-parts/content-sustainability', get_post_format() );
@@ -26,7 +26,7 @@ get_header();
 	echo get_template_part( 'template-parts/content-investor', get_post_format() );
 
 	//BLOCO O contact_us 
-	echo get_template_part( 'template-parts/content-contact_us', get_post_format() );
+	//echo get_template_part( 'template-parts/content-contact_us', get_post_format() );
 
 	
 

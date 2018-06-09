@@ -9,7 +9,7 @@
 		<div class="row" id="sustainability">
 			<div class="col-xs-12">
 				<div class="title-branco">
-					<h2> sustainability </h2>
+					<h2> Sustentabilidade </h2>
 				</div>
 			</div>
 		</div>
